@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anitharaj.volunteer_ph3.Register_Activity">
+    <EditText
+        android:id="@+id/editRegFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="26dp" />
+
+    <EditText
+        android:id="@+id/editRegLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editRegFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/editRegFirstName"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editRegFirstName" />
+
+    <EditText
+        android:id="@+id/editRegDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date of Birth"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editRegLastName"
+        app:layout_constraintTop_toBottomOf="@+id/editRegLastName"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editRegLastName"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edittextRegEmail"
+        android:layout_width="332dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your Email Address"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/edittextRegPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Enter your password"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/edittextRegEmail"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/buttonRegSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintTop_toBottomOf="@+id/edittextRegPassword"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="54dp"
+        />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegSignUp"
+        app:layout_constraintRight_toRightOf="@+id/buttonRegSignUp"
+        android:layout_marginTop="43dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toTopOf="@+id/edittextRegPassword"
+        app:layout_constraintLeft_toRightOf="@+id/buttonRegSignUp"
+        android:id="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0">
+    </ScrollView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+    <CheckBox
+        android:id="@+id/prefAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal"
+        android:onClick="onCheckClicked"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/prefNature"
+        app:layout_constraintRight_toRightOf="@+id/prefNature"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintLeft_toLeftOf="@+id/prefNature" />
+
+    <CheckBox
+        android:id="@+id/prefNature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nature"
+        android:onClick="onCheckClicked"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/prefScience"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <CheckBox
+        android:id="@+id/prefScience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Science"
+        android:onClick="onCheckClicked"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/prefNature"
+        android:layout_marginTop="110dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="98dp"
+        app:layout_constraintLeft_toLeftOf="@+id/prefNature"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <CheckBox
+        android:id="@+id/prefGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Games"
+        android:onClick="onCheckClicked"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegSignUp"
+        android:layout_marginStart="3dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="-46dp"
+        app:layout_constraintLeft_toLeftOf="@+id/prefScience"
+        android:layout_marginLeft="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>
